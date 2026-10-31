@@ -1,0 +1,10 @@
+# Static site: a single self-contained HTML file, no build step required.
+[build]
+  command = "echo 'No build step: publishing static files'"
+  publish = "."
+
+# Serve the island page at the site root
+[[redirects]]
+  from = "/"
+  to = "/Policy%20Island.html"
+  status = 200
