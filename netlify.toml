@@ -1,0 +1,11 @@
+# This site is a single self-contained static HTML file, so there is no build step.
+# These settings override the "npm run build" / "dist" values set in the Netlify UI.
+[build]
+  command = "echo 'No build step required'"
+  publish = "."
+
+# Serve the page at the site root.
+[[redirects]]
+  from = "/"
+  to = "/Policy%20Island.html"
+  status = 200
